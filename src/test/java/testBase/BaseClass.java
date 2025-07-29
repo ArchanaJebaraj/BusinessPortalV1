@@ -98,7 +98,7 @@ public class BaseClass {
 		TakesScreenshot takescreenshot=(TakesScreenshot)driver;
 		File sourceFile=takescreenshot.getScreenshotAs(OutputType.FILE);
 		
-		String targetFilePath=System.getProperty("user.dir")+"\\screenshots"+tname+"_"+timeStamp+".png";
+		String targetFilePath=System.getProperty("user.dir")+"\\Screenshots\\"+"\\Screenshot"+tname+"_"+timeStamp+".png";
 		File targetFile=new File(targetFilePath);
 		sourceFile.renameTo(targetFile);
 		return targetFilePath;
